@@ -9,6 +9,7 @@
 import React from 'react';
 import {
   SafeAreaView,
+  ScrollView,
   StatusBar,
   StyleSheet,
   Text,
@@ -26,6 +27,11 @@ import {
 import Entype from 'react-native-vector-icons/Entypo';
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
+import feed from './assets/data/feed'
+
+
+const post1 = feed[0];
+
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,11 +41,15 @@ const App = () => {
   };
 
   return (
+    <>
+    <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
     <SafeAreaView >
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <ScrollView>
       {/* <HomeScreen /> */}
-      <Post />
+      <Post post={post1 }/>
+      </ScrollView>
     </SafeAreaView>
+    </>
   );
 };
 
