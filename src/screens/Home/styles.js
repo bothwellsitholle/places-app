@@ -3,7 +3,7 @@ import {StyleSheet, Dimensions} from 'react-native';
 const styles = StyleSheet.create({
   image: {
     width: '100%',
-    height: 500,
+    height: Dimensions.get('screen').height,
     resizeMode: 'cover',
     justifyContent: 'center',
   },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 25,
-    elevation: 3
+    elevation: 3,
   },
 
   buttonText: {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     position: 'absolute',
     top: 20,
-    zIndex: 10
+    zIndex: 10,
   },
 
   searchButtonText: {

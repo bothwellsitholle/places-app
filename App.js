@@ -24,8 +24,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Entype from 'react-native-vector-icons/Entypo';
-import HomeScreen from './src/home';
-
+import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,12 +35,12 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView >
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <Post />
     </SafeAreaView>
   );
 };
-
 
 export default App;

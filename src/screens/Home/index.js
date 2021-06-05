@@ -13,7 +13,7 @@ const HomeScreen = () => {
       </Pressable>
 
       <ImageBackground
-        source={require('../../assets/images/wallpaper.jpg')}
+        source={require('../../../assets/images/wallpaper.jpg')}
         style={styles.image}>
 
       {/* Title  */}
