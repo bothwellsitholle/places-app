@@ -29,6 +29,7 @@ import Post from './src/components/Post';
 import feed from './assets/data/feed';
 import SearchResultsScreen from './src/screens/SearchResults';
 import DestinationSearchScreen from './src/screens/DestinationSearch';
+import Guest from './src/screens/Guest';
 
 const post1 = feed[0];
 
@@ -47,7 +48,8 @@ const App = () => {
           {/* <HomeScreen /> */}
           {/* <Post post={post1} /> */}
           {/* <SearchResultsScreen /> */}
-          <DestinationSearchScreen />
+          {/* <DestinationSearchScreen /> */}
+          <Guest />
         </View>
       </SafeAreaView>
     </>
